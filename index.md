@@ -5,21 +5,12 @@ layout: home
 hero:
   name: "Exercice 16"
   text: "Revue de code documentée"
-  tagline: My great project tagline
+  tagline: Par Ilann Brodl et Simon Desjardins
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Ilann Brodl
+      link: /ilann-brodl
     - theme: brand
       text: Simon Dejardins
       link: /simon-desjardins
-
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
----
 
