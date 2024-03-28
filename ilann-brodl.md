@@ -4,79 +4,64 @@ Revue de code pour le TP01 final de Simon Desjardins pour le cour d'application 
 
 ### Code
 
-**Input**
+Répétitions des **_variables_** pour les **_boutons_** de contrôle de la musique.
 
-````md
 ```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
+function playSong() {
+    props.songAudio.src = "./src/assets/songs/" + props.song.fileName
+
+    let btnPlay = document.getElementById("btnPlay") as HTMLButtonElement
+    let btnPause = document.getElementById("btnPause") as HTMLButtonElement
+    let btnStop = document.getElementById("btnStop") as HTMLButtonElement
+
+    props.songAudio.currentTime = currentTime.value
+    props.songAudio.play()
+
+    btnPlay.classList.add("d-none")
+    btnPause.classList.remove("d-none")
+    btnStop.classList.remove("d-none")
+
+    emit('playSong')
+}
+
+function pauseSong() {
+    let btnPlay = document.getElementById("btnPlay") as HTMLButtonElement
+    let btnPause = document.getElementById("btnPause") as HTMLButtonElement
+
+    currentTime.value = props.songAudio.currentTime
+    props.songAudio.pause()
+
+    btnPlay.classList.remove("d-none")
+    btnPause.classList.add("d-none")
+
+    emit('pauseSong')
 }
 ```
-````
 
-**Output**
+Utiliser les fonctions de **_composant Vue_** plutôt que **_setInterval_** pour actualiser le minuteur de la musique.
 
 ```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
+function startSongTimer() {
+  songTimer.value = prepareTimeForDisplay(songCurrentTime.value)
+  if (songCurrentTime.value == parseInt(songDuration.value)) {
+    clearInterval(timer)
+  }
+
+  if (!props.isPaused) {
+    songCurrentTime.value++
   }
 }
 ```
 
 ### Autres
 
-**Input**
-
-```md
-::: info
-This is an info box.
+::: info Connexion a la base de données
+Il manque l'affichage d'un message d'erreur lorsque le site n'arrive pas à se connecter a la base de données, 
+ou lorsque la base de données est introuvable.
 :::
 
-::: tip
-This is a tip.
-:::
 
-::: warning
-This is a warning.
-:::
 
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
-```
-
-**Output**
-
-::: info
-This is an info box.
-:::
-
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
 
 ## Lien vers le site
 
