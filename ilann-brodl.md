@@ -2,8 +2,11 @@
 
 Revue de code pour le TP01 final de Simon Desjardins pour le cour d'application web.
 
+## Revue de code
+
 ### Code
 
+#### Répétitions de variables
 Répétitions des **_variables_** pour les **_boutons_** de contrôle de la musique.
 
 ```js{4}
@@ -37,7 +40,7 @@ function pauseSong() {
     emit('pauseSong')
 }
 ```
-
+#### Utiliser les composants Vue
 Utiliser les fonctions de **_composant Vue_** plutôt que **_setInterval_** pour actualiser le minuteur de la musique.
 
 ```js{4}
@@ -60,6 +63,14 @@ Il manque l'affichage d'un message d'erreur lorsque le site n'arrive pas à se c
 ou lorsque la base de données est introuvable.
 :::
 
+::: info Message par défaut
+Afficher un texte par défaut lorsque le site ne trouve aucune informations sur la base de données.
+:::
+
+::: tip Point positif pour le reste du TP
+- La globalité des fichiers semble etre bien structuré avec une utilisation appropriée des props pour passer les données du parent au child.
+- Les fonctions sont comprehensible et utilisable.
+:::
 
 
 
