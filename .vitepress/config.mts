@@ -13,16 +13,12 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Revue de codes',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Simon Desjardins', link: '/simon-desjardins' },
+          { text: 'Ilann Brodl', link: '/ilann-brodl' }
         ]
       }
-    ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
   }
 })

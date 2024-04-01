@@ -1,6 +1,6 @@
 # Revue de code par Ilann Brodl
 
-Revue de code pour le TP01 final de Simon Desjardins pour le cour d'application web.
+Revue de code pour le TP01 final de Simon Desjardins pour le cours d'application web.
 
 ## Revue de code
 

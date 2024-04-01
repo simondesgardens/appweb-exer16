@@ -1,5 +1,7 @@
 # Revue de code par Simon Desjardins
 
+Revue de code pour le TP01 final de Ilann Brodl pour le cours d'application web.
+
 ## Commentaires générals
 
 Les variables et les fonctions ne sont pas typées:
