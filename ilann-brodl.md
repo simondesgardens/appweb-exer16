@@ -71,9 +71,3 @@ Afficher un texte par défaut lorsque le site ne trouve aucune informations sur 
 - La globalité des fichiers semble etre bien structuré avec une utilisation appropriée des props pour passer les données du parent au child.
 - Les fonctions sont comprehensible et utilisable.
 :::
-
-
-
-## Lien vers le site
-
-Voici le lien vers [le site du Tp01](http://localhost:5174/).
